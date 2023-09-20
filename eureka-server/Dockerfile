@@ -1,6 +1,6 @@
 FROM openjdk
-LABEL maintainer ="abc@mail.com"
-EXPOSE 8082
+LABEL maintainer="abc@mail.com"
+EXPOSE 8761
 WORKDIR /app
-COPY target/eureka-server.jar /app/eureka-server.jar
-ENTRYPOINT ["java", "-jar","eureka-server.jar"]
+COPY target/eurekaservice.jar /app/eurekaservice.jar
+ENTRYPOINT ["java", "-jar", "eurekaservice.jar"]
